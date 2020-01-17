@@ -3,7 +3,7 @@
 This repository contains the source files used in the WiiPiiDo online documentation.
 
 ## Usage
-This documentation uses (MkDocs)[https://www.mkdocs.org/] to generate the online documentation. \
+This documentation uses [MkDocs](https://www.mkdocs.org/) to generate the online documentation. \
 To use MkDocs you simpy need to install it first, using pip:
 
 ```bash
