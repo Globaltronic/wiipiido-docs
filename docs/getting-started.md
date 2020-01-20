@@ -19,10 +19,20 @@ Independently of the method used to use the board, the login credentials are:
 To connect to the console using the serial interface,
 <!-- TODO put link to one USB-to-Serial -->
 you need to have a USB to Serial connector,
-by connecting it from the host pc USB port to the WiiPiiDo Serial
+by connecting it from the host PC's USB port to the WiiPiiDo's Serial
 connection highlighted in the following image:
 
-<img src="images/wiipiido_serial.jpg" alt="Serial Login" width="200"/>
+<img src="/images/wiipiido_serial.jpg" alt="WiiPiiDo Serial Port" width="250"/>
+
+The WiiPiiDo baud rate is set to *115200*, so, once connected
+to Linux machine you can use the [picocom](https://linux.die.net/man/8/picocom) program
+to connect use the serial console, as follow:
+
+```bash
+$ picocom -b 115200 <serial_port>
+```
+
+In Windows, the program  [Putty](https://putty.org) can be used for this effect as well.
 
 ## Connect through SSH
 

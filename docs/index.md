@@ -1,5 +1,5 @@
 
-<img src="images/logo.png" alt="WiiPiiDo Logo" width="300"/>
+<img src="/images/logo.png" alt="WiiPiiDo Logo" width="300"/>
 
 Welcome to the documentation for the [WiiPiiDo](http://www.globaltronic.pt/en/product/wiipiido/).
 
@@ -9,7 +9,7 @@ The WiiPiiDo is a compact and high-performance single-board computer.
 
 ## The board layout
 
-<img src="images/wiipiido_comp.png" alt="WiiPiiDo Components" width="650"/>
+<img src="/images/wiipiido_comp.png" alt="WiiPiiDo Components" width="650"/>
 
 ## Contact
 
