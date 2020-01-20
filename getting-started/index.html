@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Getting Started - WiiPiiDo Documentation</title>
+  <title>Getting started - WiiPiiDo Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Getting Started";
+    var mkdocs_page_name = "Getting started";
     var mkdocs_page_input_path = "getting-started.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,10 +55,16 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Getting Started</a>
+    <a class="current" href="./">Getting started</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#getting-started">Getting Started</a></li>
+    <li class="toctree-l2"><a href="#login-credentials">Login credentials</a></li>
+    
+
+    <li class="toctree-l2"><a href="#connect-through-the-serial-interface">Connect through the serial interface</a></li>
+    
+
+    <li class="toctree-l2"><a href="#activatedeactivate-the-desktop-environment">Activate/Deactivate the Desktop Environment</a></li>
     
 
     </ul>
@@ -86,7 +92,7 @@
     
       
     
-    <li>Getting Started</li>
+    <li>Getting started</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -96,9 +102,31 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="getting-started">Getting Started</h1>
-<p>The WiiPiiDo comes by default deployed with an <a href="https://www.armbian.com/">Armbian</a> image,
-that was customized to fully support all of the board components.</p>
+                <p>The WiiPiiDo comes by default deployed with an <a href="https://www.armbian.com/">Armbian</a> image,
+that was customized to fully support all of the WiiPiiDo components.</p>
+<p>This image comes</p>
+<h3 id="login-credentials">Login credentials</h3>
+<p>The default login credentials are:</p>
+<ul>
+<li><strong>username:</strong> wiipiido</li>
+<li><strong>password:</strong> wiipiido</li>
+</ul>
+<h2 id="connect-through-the-serial-interface">Connect through the serial interface</h2>
+<h2 id="activatedeactivate-the-desktop-environment">Activate/Deactivate the Desktop Environment</h2>
+<p>To activate and deactivate the desktop environment that comes by default,
+you can simply activate/disable the display manager that is being used,
+which in this case is <a href="https://wiki.archlinux.org/index.php/LightDM">LightDM</a>.</p>
+<p>To do this, you can run the following commands in the terminal.</p>
+<pre><code class="bash"># Enable the desktop environment
+$ systemctl enable lightdm.service
+$ systemctl start lightdm.service
+
+# Enable the desktop environment
+$ systemctl stop lightdm.service
+$ systemctl disable lightdm.service
+</code></pre>
+
+<p>After rebooting the board, the desktop environment will be enabled/disabled.</p>
               
             </div>
           </div>
