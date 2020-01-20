@@ -121,9 +121,16 @@ This way, it it possible to use the WiiPiiDo in the following ways:</p>
 <p>To connect to the console using the serial interface,
 <!-- TODO put link to one USB-to-Serial -->
 you need to have a USB to Serial connector,
-by connecting it from the host pc USB port to the WiiPiiDo Serial
+by connecting it from the host PC's USB port to the WiiPiiDo's Serial
 connection highlighted in the following image:</p>
-<p><img src="images/wiipiido_serial.jpg" alt="Serial Login" width="200"/></p>
+<p><img src="/images/wiipiido_serial.jpg" alt="WiiPiiDo Serial Port" width="250"/></p>
+<p>The WiiPiiDo baud rate is set to <em>115200</em>, so, once connected
+to Linux machine you can use the <a href="https://linux.die.net/man/8/picocom">picocom</a> program
+to connect use the serial console, as follow:</p>
+<pre><code class="bash">$ picocom -b 115200 &lt;serial_port&gt;
+</code></pre>
+
+<p>In Windows, the program  <a href="https://putty.org">Putty</a> can be used for this effect as well.</p>
 <h2 id="connect-through-ssh">Connect through SSH</h2>
 <p>To connect to the WiiPiiDo through SSH you first need to know it's IP address.
 This can be found by either using a network scanner program, like <a href="https://www.fing.com/">Fing</a>,
