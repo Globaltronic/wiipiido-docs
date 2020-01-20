@@ -9,8 +9,9 @@ The WiiPiiDo is a compact and high-performance single-board computer.
 
 ## The board layout
 
-![WiiPiiDo Components](http://www.globaltronic.pt/wp-content/uploads/wiipiido_comp.png)
+<img src="images/wiipiido_comp.png" alt="WiiPiiDo Components" width="650"/>
 
 ## Contact
 
-For more information, please contact us directly at <geral@globaltronic.pt>.
+For more information, please contact us directly by phone at ***(+351) 234 612 687***,
+or send an email to <geral@globaltronic.pt>.

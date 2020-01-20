@@ -1,25 +1,49 @@
-The WiiPiiDo comes by default deployed with an [Armbian](https://www.armbian.com/) image,
+The WiiPiiDo comes by default deployed with a [Armbian](https://www.armbian.com/) image,
 that was customized to fully support all of the WiiPiiDo components.
 
-This image comes
+Through Armbian, the WiiPiiDo can be used either as a desktop-alike image,
+or as a server image.
+This way, it it possible to use the WiiPiiDo in the following ways:
 
+- [Using the console through the serial port](#connect-through-the-serial-interface)
+- [Using the console through SSH](#connect-through-ssh)
+- [Using a desktop environment]()
 
-### Login credentials
+Independently of the method used to use the board, the login credentials are:
 
-The default login credentials are:
+- **username:** pi
+- **password:** wiipido
 
-- **username:** wiipiido
-- **password:** wiipiido
+## Connect through the Serial Interface
 
-## Connect through the serial interface
+To connect to the console using the serial interface,
+<!-- TODO put link to one USB-to-Serial -->
+you need to have a USB to Serial connector,
+by connecting it from the host pc USB port to the WiiPiiDo Serial
+connection highlighted in the following image:
+
+<img src="images/wiipiido_serial.jpg" alt="Serial Login" width="200"/>
+
+## Connect through SSH
+
+To connect to the WiiPiiDo through SSH you first need to know it's IP address.
+This can be found by either using a network scanner program, like [Fing](https://www.fing.com/),
+or by configuring the WiiPiiDo to have a static and known IP,
+when connected to it using another method.
+
+When the IP address is known, you can login to the WiiPiiDo, in a Linux machine by using the following command
+`$ ssh pi@<wiipiido_ip_address>`.
+
+Alternately, in Windows, you can use once again, for example [Putty](https://putty.org).
+
 
 ## Activate/Deactivate the Desktop Environment
 
 To activate and deactivate the desktop environment that comes by default,
-you can simply activate/disable the display manager that is being used,
+you can simply enable/disable the display manager that is being used,
 which in this case is [LightDM](https://wiki.archlinux.org/index.php/LightDM).
 
-To do this, you can run the following commands in the terminal.
+To do this, you can run the following commands in the console.
 
 ```bash
 # Enable the desktop environment
@@ -31,4 +55,4 @@ $ systemctl stop lightdm.service
 $ systemctl disable lightdm.service
 ```
 
-After rebooting the board, the desktop environment will be enabled/disabled.
+After rebooting the board, the desktop environment will be active/inactive.
