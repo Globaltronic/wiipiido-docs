@@ -22,7 +22,7 @@ you need to have a USB to Serial connector,
 by connecting it from the host PC's USB port to the WiiPiiDo's Serial
 connection highlighted in the following image:
 
-<img src="/images/wiipiido_serial.jpg" alt="WiiPiiDo Serial Port" width="250"/>
+![WiiPiiDo Serial Port](img/wiipiido_serial.jpg)
 
 The WiiPiiDo baud rate is set to *115200*, so, once connected
 to Linux machine you can use the [picocom](https://linux.die.net/man/8/picocom) program
