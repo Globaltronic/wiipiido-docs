@@ -58,10 +58,10 @@
     <a class="current" href="./">Getting started</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#login-credentials">Login credentials</a></li>
+    <li class="toctree-l2"><a href="#connect-through-the-serial-interface">Connect through the Serial Interface</a></li>
     
 
-    <li class="toctree-l2"><a href="#connect-through-the-serial-interface">Connect through the serial interface</a></li>
+    <li class="toctree-l2"><a href="#connect-through-ssh">Connect through SSH</a></li>
     
 
     <li class="toctree-l2"><a href="#activatedeactivate-the-desktop-environment">Activate/Deactivate the Desktop Environment</a></li>
@@ -102,21 +102,41 @@
           <div role="main">
             <div class="section">
               
-                <p>The WiiPiiDo comes by default deployed with an <a href="https://www.armbian.com/">Armbian</a> image,
+                <p>The WiiPiiDo comes by default deployed with a <a href="https://www.armbian.com/">Armbian</a> image,
 that was customized to fully support all of the WiiPiiDo components.</p>
-<p>This image comes</p>
-<h3 id="login-credentials">Login credentials</h3>
-<p>The default login credentials are:</p>
+<p>Through Armbian, the WiiPiiDo can be used either as a desktop-alike image,
+or as a server image.
+This way, it it possible to use the WiiPiiDo in the following ways:</p>
 <ul>
-<li><strong>username:</strong> wiipiido</li>
-<li><strong>password:</strong> wiipiido</li>
+<li><a href="#connect-through-the-serial-interface">Using the console through the serial port</a></li>
+<li><a href="#connect-through-ssh">Using the console through SSH</a></li>
+<li><a href="">Using a desktop environment</a></li>
 </ul>
-<h2 id="connect-through-the-serial-interface">Connect through the serial interface</h2>
+<p>Independently of the method used to use the board, the login credentials are:</p>
+<ul>
+<li><strong>username:</strong> pi</li>
+<li><strong>password:</strong> wiipido</li>
+</ul>
+<h2 id="connect-through-the-serial-interface">Connect through the Serial Interface</h2>
+<p>To connect to the console using the serial interface,
+<!-- TODO put link to one USB-to-Serial -->
+you need to have a USB to Serial connector,
+by connecting it from the host pc USB port to the WiiPiiDo Serial
+connection highlighted in the following image:</p>
+<p><img src="images/wiipiido_serial.jpg" alt="Serial Login" width="200"/></p>
+<h2 id="connect-through-ssh">Connect through SSH</h2>
+<p>To connect to the WiiPiiDo through SSH you first need to know it's IP address.
+This can be found by either using a network scanner program, like <a href="https://www.fing.com/">Fing</a>,
+or by configuring the WiiPiiDo to have a static and known IP,
+when connected to it using another method.</p>
+<p>When the IP address is known, you can login to the WiiPiiDo, in a Linux machine by using the following command
+<code>$ ssh pi@&lt;wiipiido_ip_address&gt;</code>.</p>
+<p>Alternately, in Windows, you can use once again, for example <a href="https://putty.org">Putty</a>.</p>
 <h2 id="activatedeactivate-the-desktop-environment">Activate/Deactivate the Desktop Environment</h2>
 <p>To activate and deactivate the desktop environment that comes by default,
-you can simply activate/disable the display manager that is being used,
+you can simply enable/disable the display manager that is being used,
 which in this case is <a href="https://wiki.archlinux.org/index.php/LightDM">LightDM</a>.</p>
-<p>To do this, you can run the following commands in the terminal.</p>
+<p>To do this, you can run the following commands in the console.</p>
 <pre><code class="bash"># Enable the desktop environment
 $ systemctl enable lightdm.service
 $ systemctl start lightdm.service
@@ -126,7 +146,7 @@ $ systemctl stop lightdm.service
 $ systemctl disable lightdm.service
 </code></pre>
 
-<p>After rebooting the board, the desktop environment will be enabled/disabled.</p>
+<p>After rebooting the board, the desktop environment will be active/inactive.</p>
               
             </div>
           </div>
