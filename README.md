@@ -2,7 +2,7 @@
 
 This repository contains the source files used in the WiiPiiDo online documentation.
 
-## Usage
+## Quick Start
 This documentation uses [MkDocs](https://www.mkdocs.org/) to generate the online documentation. \
 To use MkDocs you simpy need to install it first, using pip:
 
@@ -18,3 +18,9 @@ mkdocs serve
 ```
 
 Then you can access the `localhost:8000` to check the site and make modifications at run time.
+
+To deploy the documentation to GitHub Pages, simply run:
+
+```bash
+mkdocs gh-deploy
+```

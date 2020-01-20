@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Home
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+Welcome to the documentation for the [WiiPiiDo board](http://www.globaltronic.pt/en/product/wiipiido/).
 
-## Commands
+## What is the WiiPiiDo?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+The WiiPiiDo is a Single-board Computer developed by [Globaltronic](http://www.globaltronic.pt/en).
 
-## Project layout
+## The board layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Contacts
+
+For any 
