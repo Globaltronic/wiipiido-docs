@@ -5,5 +5,3 @@ theme: readthedocs
 nav:
   - 'Home': index.md
   - 'Getting Started': getting-started.md
-  - 'Armbian': armbian.md
-  - 'Yocto': yocto.md
