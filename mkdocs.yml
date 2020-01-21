@@ -1,2 +1,9 @@
 site_name: WiiPiiDo Documentation
+repo_url: https://github.com/globaltronic/wiipiido-docs
 theme: readthedocs
+
+nav:
+  - 'Home': index.md
+  - 'Getting Started': getting-started.md
+  - 'Armbian': armbian.md
+  - 'Yocto': yocto.md

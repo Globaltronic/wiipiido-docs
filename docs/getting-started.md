@@ -12,7 +12,7 @@ This way, it it possible to use the WiiPiiDo in the following ways:
 Independently of the method used to use the board, the login credentials are:
 
 - **username:** pi
-- **password:** wiipido
+- **password:** wiipiido
 
 ## Connect through the Serial Interface
 
