@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Yocto - WiiPiiDo Documentation</title>
+  <title>Peripheral examples - WiiPiiDo Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Yocto";
-    var mkdocs_page_input_path = "yocto.md";
+    var mkdocs_page_name = "Peripheral examples";
+    var mkdocs_page_input_path = "peripheral-examples.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -80,10 +80,10 @@
     
       
     
-    <li>Yocto</li>
+    <li>Peripheral examples</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/globaltronic/wiipiido-docs/edit/master/docs/yocto.md"
+        <a href="https://github.com/globaltronic/wiipiido-docs/edit/master/docs/peripheral-examples.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -93,12 +93,23 @@
           <div role="main">
             <div class="section">
               
-                <p>The WiiPiiDo also has support for <a href="https://www.yoctoproject.org/">Yocto</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The Yocto support is still in it's early states, if you are not familiar with Yocto,
-or want something more stable, we recomend you to use the Armbian image.</p>
-</div>
+                <p>In this section there are examples on how to utilize some of the components the WiiPiiDo has, through the terminal.</p>
+<h3 id="1-wire">1-Wire</h3>
+<h3 id="adc">ADC</h3>
+<h3 id="accelerometer">Accelerometer</h3>
+<h3 id="gpio">GPIO</h3>
+<h3 id="gps">GPS</h3>
+<h3 id="nb-iot">NB-IoT</h3>
+<h3 id="pwm">PWM</h3>
+<h3 id="rtcc">RTCC</h3>
+<h3 id="wi-fi">Wi-Fi</h3>
+<p>To connect to a new Wi-Fi AP through the terminal, you can use the terminal interfaces provided by the
+<a href="https://wiki.archlinux.org/index.php/NetworkManager">NetworkManager</a> package,
+which comes installed by default in the Armbian image.</p>
+<p>This way, we can connect to a new network by using the command <code>nmcli</code>, using a console client,
+or <code>nmtui</code>, using a terminal user interface.
+<code>nmtui</code> is easy and intuitive to use, so in this example we will have the commands for using <code>nmcli</code>,
+to serve has a different perspective.</p>
               
             </div>
           </div>

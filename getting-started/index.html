@@ -151,13 +151,16 @@ Once the <strong>Serial line</strong> and <strong>Speed</strong> are with the co
 you can start the serial connection by clicking in the <strong>Open</strong> button.</p>
 <p><img alt="Putty Serial Connection" src="../img/putty_serial.png" /></p>
 <h2 id="connect-through-ssh">Connect through SSH</h2>
-<p>To connect to the WiiPiiDo through SSH you first need to know it's IP address.
+<p>To connect to the WiiPiiDo through SSH you first need to know its IP address.
 This can be found by either using a network scanner program, like <a href="https://www.fing.com/">Fing</a>,
 or by configuring the WiiPiiDo to have a static and known IP,
-when connected to it using the serial connection or .</p>
+when connected to it using the serial connection or using the HDMI output.</p>
 <p>When the IP address is known, you can login to the WiiPiiDo, in a Linux machine by using the following command
 <code>$ ssh pi@&lt;wiipiido_ip_address&gt;</code>.</p>
-<p>Alternately, in Windows, you can use once again, for example <a href="https://putty.org">Putty</a>.</p>
+<p>Alternately, in Windows, you can, for example, use once again use <a href="https://putty.org">Putty</a>.</p>
+<p>This time, make sure that you are using <strong>SSH</strong> as the <strong>Connection type</strong>,
+and that the port is <strong>22</strong>.</p>
+<p><img alt="Putty SSH" src="../img/putty_ssh.png" /></p>
 <h2 id="activatedeactivate-the-desktop-environment">Activate/Deactivate the Desktop Environment</h2>
 <p>To activate and deactivate the desktop environment that comes by default,
 you can simply enable/disable the display manager that is being used,
