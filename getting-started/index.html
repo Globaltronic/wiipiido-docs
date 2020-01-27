@@ -105,21 +105,24 @@
           <div role="main">
             <div class="section">
               
-                <p>The WiiPiiDo comes by default deployed with a <a href="https://www.armbian.com/">Armbian</a> image,
+                <p>The WiiPiiDo comes by default deployed with an <a href="https://www.armbian.com/">Armbian</a> image,
 that was customized to fully support all of the WiiPiiDo components.</p>
-<p>Through Armbian, the WiiPiiDo can be used either as a desktop-alike image,
-or as a server image.
+<p>Through Armbian, the WiiPiiDo can be used either as a desktop-alike computer,
+or as a server.
 This way, it it possible to use the WiiPiiDo in the following ways:</p>
 <ul>
 <li><a href="#connect-through-the-serial-interface">Using the console through the serial port</a></li>
 <li><a href="#connect-through-ssh">Using the console through SSH</a></li>
 <li><a href="">Using a desktop environment</a></li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>Independently of the method used to use the board, the login credentials are:</p>
 <ul>
 <li><strong>username:</strong> pi</li>
 <li><strong>password:</strong> wiipiido</li>
 </ul>
+</div>
 <h2 id="connect-through-the-serial-interface">Connect through the Serial Interface</h2>
 <p>To connect to the console using the serial interface,
 <!-- TODO put link to one USB-to-Serial -->
@@ -128,17 +131,30 @@ by connecting it from the host PC's USB port to the WiiPiiDo's Serial
 connection highlighted in the following image:</p>
 <p><img alt="WiiPiiDo Serial Port" src="../img/wiipiido_serial.jpg" /></p>
 <p>The WiiPiiDo baud rate is set to <em>115200</em>, so, once connected
-to Linux machine you can use the <a href="https://linux.die.net/man/8/picocom">picocom</a> program
-to connect use the serial console, as follow:</p>
+to Linux machine, you can use for example the <a href="https://linux.die.net/man/8/picocom">picocom</a> program
+to open the serial console:</p>
 <pre><code class="bash">$ picocom -b 115200 &lt;serial_port&gt;
 </code></pre>
 
-<p>In Windows, the program  <a href="https://putty.org">Putty</a> can be used for this effect as well.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>&lt;serial_port&gt;</code> is the port being used by the USB to Serial connector.</p>
+<p>You can check this by, after connecting the connector to the PC, using the command <code>dmseg</code>
+and see in which port the device was connected.</p>
+<p><img alt="Connect FTDI" src="../img/connect_ftdi.png" /></p>
+<p>In this example, we can see that a port was connected to the <strong>ttyUSB0</strong> port.
+As such, in this case, the picocom command would be <code>picocom -b 115200 /dev/ttyUSB0</code>.</p>
+</div>
+<p>In Windows, <a href="https://putty.org">Putty</a> can be used for this effect as well.</p>
+<p>In this case, make sure that you are using <strong>Serial</strong> as the <strong>Connection type</strong>.
+Once the <strong>Serial line</strong> and <strong>Speed</strong> are with the correct values,
+you can start the serial connection by clicking in the <strong>Open</strong> button.</p>
+<p><img alt="Putty Serial Connection" src="../img/putty_serial.png" /></p>
 <h2 id="connect-through-ssh">Connect through SSH</h2>
 <p>To connect to the WiiPiiDo through SSH you first need to know it's IP address.
 This can be found by either using a network scanner program, like <a href="https://www.fing.com/">Fing</a>,
 or by configuring the WiiPiiDo to have a static and known IP,
-when connected to it using another method.</p>
+when connected to it using the serial connection or .</p>
 <p>When the IP address is known, you can login to the WiiPiiDo, in a Linux machine by using the following command
 <code>$ ssh pi@&lt;wiipiido_ip_address&gt;</code>.</p>
 <p>Alternately, in Windows, you can use once again, for example <a href="https://putty.org">Putty</a>.</p>
@@ -151,7 +167,7 @@ which in this case is <a href="https://wiki.archlinux.org/index.php/LightDM">Lig
 $ systemctl enable lightdm.service
 $ systemctl start lightdm.service
 
-# Enable the desktop environment
+# Disable the desktop environment
 $ systemctl stop lightdm.service
 $ systemctl disable lightdm.service
 </code></pre>
