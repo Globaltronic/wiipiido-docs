@@ -53,19 +53,22 @@ you can start the serial connection by clicking in the **Open** button.
 
 ![Putty Serial Connection](img/putty_serial.png)
 
-
 ## Connect through SSH
 
-To connect to the WiiPiiDo through SSH you first need to know it's IP address.
+To connect to the WiiPiiDo through SSH you first need to know its IP address.
 This can be found by either using a network scanner program, like [Fing](https://www.fing.com/),
 or by configuring the WiiPiiDo to have a static and known IP,
-when connected to it using the serial connection or .
+when connected to it using the serial connection or using the HDMI output.
 
 When the IP address is known, you can login to the WiiPiiDo, in a Linux machine by using the following command
 `$ ssh pi@<wiipiido_ip_address>`.
 
-Alternately, in Windows, you can use once again, for example [Putty](https://putty.org).
+Alternately, in Windows, you can, for example, use once again use [Putty](https://putty.org).
 
+This time, make sure that you are using **SSH** as the **Connection type**,
+and that the port is **22**.
+
+![Putty SSH](img/putty_ssh.png)
 
 ## Activate/Deactivate the Desktop Environment
 
