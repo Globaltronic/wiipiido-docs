@@ -1,10 +1,37 @@
 site_name: WiiPiiDo Documentation
 repo_url: https://github.com/globaltronic/wiipiido-docs
-theme: readthedocs
+theme:
+  name: 'material'
+  # logo: 'https://external-content.duckduckgo.com/ip3/www.globaltronic.pt.ico'
+  # favicon: 'assets/images/favicon.ico'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
 
 markdown_extensions:
     - admonition
+    - codehilite
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+
+plugins:
+  - search
+  - autolinks
+  - git-revision-date-localized:
+      type: datetime
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/globaltronic'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/globaltronic-electronics-and-telecommunications/'
 
 nav:
   - 'Home': index.md
   - 'Getting Started': getting-started.md
+  - 'Armbian': armbian.md
+  - 'Yocto': yocto.md
+  # - 'Peripherals Examples': peripheral-examples.md

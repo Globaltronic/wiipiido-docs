@@ -3,13 +3,13 @@ that was customized to fully support all of the WiiPiiDo components.
 
 Through Armbian, the WiiPiiDo can be used either as a desktop-alike computer,
 or as a server.
-This way, it it possible to use the WiiPiiDo in the following ways:
+This way, it is possible to use the WiiPiiDo in the following ways:
 
 - [Using the console through the serial port](#connect-through-the-serial-interface)
 - [Using the console through SSH](#connect-through-ssh)
-- [Using a desktop environment]()
+- [Using a desktop environment through HDMI](#connect-with-hdmi)
 
-!!! info
+!!! note
     Independently of the method used to use the board, the login credentials are:
 
     - **username:** pi
@@ -33,7 +33,7 @@ to open the serial console:
 $ picocom -b 115200 <serial_port>
 ```
 
-!!! note
+!!! info
 
     The `<serial_port>` is the port being used by the USB to Serial connector.
 
@@ -43,7 +43,7 @@ $ picocom -b 115200 <serial_port>
     ![Connect FTDI](img/connect_ftdi.png)
 
     In this example, we can see that a port was connected to the **ttyUSB0** port.
-    As such, in this case, the picocom command would be `picocom -b 115200 /dev/ttyUSB0`.
+    As such, in this case, the picocom command would be `#!bash picocom -b 115200 /dev/ttyUSB0`.
 
 In Windows, [Putty](https://putty.org) can be used for this effect as well.
 
@@ -61,7 +61,7 @@ or by configuring the WiiPiiDo to have a static and known IP,
 when connected to it using the serial connection or using the HDMI output.
 
 When the IP address is known, you can login to the WiiPiiDo, in a Linux machine by using the following command
-`$ ssh pi@<wiipiido_ip_address>`.
+`#!bash ssh pi@<wiipiido_ip_address>`.
 
 Alternately, in Windows, you can, for example, use once again use [Putty](https://putty.org).
 
@@ -70,22 +70,7 @@ and that the port is **22**.
 
 ![Putty SSH](img/putty_ssh.png)
 
-## Activate/Deactivate the Desktop Environment
+## Connect with HDMI
 
-To activate and deactivate the desktop environment that comes by default,
-you can simply enable/disable the display manager that is being used,
-which in this case is [LightDM](https://wiki.archlinux.org/index.php/LightDM).
-
-To do this, you can run the following commands in the console.
-
-```bash
-# Enable the desktop environment
-$ systemctl enable lightdm.service
-$ systemctl start lightdm.service
-
-# Disable the desktop environment
-$ systemctl stop lightdm.service
-$ systemctl disable lightdm.service
-```
-
-After rebooting the board, the desktop environment will be active/inactive.
+To use the WiiPiiDo with a desktop environment,
+you need to connect use the HDMI output ([label 6 in the board layout](index.md#board-layout)).

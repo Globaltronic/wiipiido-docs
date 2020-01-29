@@ -5,23 +5,23 @@
 Welcome to the documentation for the [WiiPiiDo](http://www.globaltronic.pt/en/product/wiipiido/).
 
 !!! warning
-    This documentation is still a Work-in-Progress, some critical information may still be missing.
-    If there is something that you would like to have here that is still missing,
+    This documentation is still a Work-in-Progress, some critical information may still be missing.<br/>
+    If there is some information that you would like to be added,
     please fill a issue [here](https://github.com/globaltronic/wiipiido-docs/issues).
 
 ## What is the WiiPiiDo?
 
 The WiiPiiDo is a compact and high-performance single-board computer.
 
-## The board layout
+## Board Layout
 
 <img src="img/wiipiido_comp.png" alt="WiiPiiDo Components" width="650"/>
 
-## Headers Pin out
+## Pinout
 
 The WiiPiiDo has 3 headers, label as **11**, **12** and **13** in the board layout.
 
-The pin out for these headers is the following:
+The pinout for these headers is the following:
 
 | Header                                              | Pin out                                                                      |
 |:---------------------------------------------------:|:----------------------------------------------------------------------------:|

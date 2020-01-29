@@ -1,2 +1,7 @@
 mkdocs
-mkdocs-versioning
+mkdocs-autolinks-plugin
+mkdocs-material
+mkdocs-minify-plugin
+mkdocs-git-revision-date-localized-plugin
+pygments
+pymdown-extensions
