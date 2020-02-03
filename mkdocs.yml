@@ -24,6 +24,8 @@ plugins:
 
 extra:
   social:
+    - type: 'home'
+      link: 'http://www.globaltronic.pt/en/'
     - type: 'github'
       link: 'https://github.com/globaltronic'
     - type: 'linkedin'
