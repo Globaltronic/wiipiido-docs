@@ -1,4 +1,8 @@
 
+## Changing Armbian configurations
+
+Armbian has a run time utility that can be used to change some of its configurations easily,
+using a [TUI](https://en.wikipedia.org/wiki/Terminal_user_interface).
 
 ## Activate/Deactivate the Desktop Environment
 
