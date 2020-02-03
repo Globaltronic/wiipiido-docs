@@ -6,7 +6,7 @@ theme:
   favicon: 'https://github.com/Globaltronic/wiipiido-docs/raw/master/docs/img/WIIPIIDO_LOGO.ico'
   palette:
     primary: 'blue'
-    accent: 'teal'
+    accent: 'light blue'
 
 markdown_extensions:
     - admonition
