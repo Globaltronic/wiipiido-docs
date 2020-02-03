@@ -2,11 +2,11 @@ site_name: WiiPiiDo Documentation
 repo_url: https://github.com/globaltronic/wiipiido-docs
 theme:
   name: 'material'
-  # logo: 'https://external-content.duckduckgo.com/ip3/www.globaltronic.pt.ico'
-  # favicon: 'docs/img/WIIPIIDO_LOGO.ico'
+  logo: 'https://github.com/Globaltronic/wiipiido-docs/raw/master/docs/img/WIIPIIDO_LOGO.ico'
+  favicon: 'https://github.com/Globaltronic/wiipiido-docs/raw/master/docs/img/WIIPIIDO_LOGO.ico'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'blue'
+    accent: 'teal'
 
 markdown_extensions:
     - admonition
