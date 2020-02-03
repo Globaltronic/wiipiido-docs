@@ -1,3 +1,5 @@
+# Peripheral Examples
+
 In this section there are examples on how to utilize some of the components the WiiPiiDo has, through the terminal.
 
 <!-- ### 1-Wire -->
