@@ -13,7 +13,6 @@ pip install -r requirements.txt
 When installed, you can start the documentation build process by running:
 
 ```bash
-cd wiipiido-docs
 mkdocs serve
 ```
 
