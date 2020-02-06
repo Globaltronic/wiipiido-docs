@@ -75,4 +75,6 @@ and that the port is **22**.
 ## Connect with HDMI
 
 To use the WiiPiiDo with a desktop environment,
-you need to connect use the HDMI output ([label 6 in the board layout](index.md#board-layout)).
+you need to connect use the HDMI output ([label 6 in the board layout](index.md#board-layout))
+before booting, and then make sure that you have the Desktop Environment enabled,
+following [this steps](armbian.md#enablingdisabling_the_desktop_environment) for Armbian.
