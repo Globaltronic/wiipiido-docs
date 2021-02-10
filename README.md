@@ -1,6 +1,6 @@
 # WiiPiiDo Documentation
 
-This repository contains the source files used in the WiiPiiDo online documentation.
+This repository contains the source files used in the [WiiPiiDo online documentation](https://globaltronic.github.io/wiipiido-docs/).
 
 ## Quick Start
 This documentation uses [MkDocs](https://www.mkdocs.org/) to generate the online documentation, as well as some plugins. \
